@@ -13,33 +13,66 @@
             <objects>
                 <viewController storyboardIdentifier="VendorDetailsVC" id="Y6W-OH-hqX" customClass="VendorDetailsViewController" customModule="Alliants_Demo_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bZh-O9-Gxc" userLabel="Vendor Image View">
-                                <rect key="frame" x="0.0" y="44" width="414" height="275"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q9Q-bd-V2C">
+                                <rect key="frame" x="0.0" y="44" width="414" height="1222"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEy-Rv-3rv" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1184.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bZh-O9-Gxc" userLabel="Vendor Image View">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="275"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="275" id="gBj-8M-0iJ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2uG-32-NVk" userLabel="Description Label">
+                                                <rect key="frame" x="20" y="305" width="374" height="859.5"/>
+                                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim molestie ante, eu tincidunt tellus congue a. Cras pellentesque viverra nisl, in porttitor est rhoncus et. Fusce vitae augue maximus, faucibus odio ut, condimentum arcu. Integer sed congue mi. Curabitur congue pharetra mi non posuere. Mauris sit amet orci ac ex suscipit congue. Mauris auctor justo eget mattis porttitor. Proin odio enim, placerat nec tempus sit amet, fringilla vitae odio. In eu augue id lectus scelerisque accumsan. Vestibulum eu tortor non ipsum facilisis lobortis et ut turpis. Quisque lobortis orci ut ultricies commodo. Suspendisse potenti. Integer eu odio purus. Fusce faucibus felis quis elit finibus, sed maximus erat cursus. In at aliquam nisi. Donec quis odio sem.
+
+Quisque id orci id dui iaculis faucibus a in justo. Aliquam consequat dignissim arcu, non euismod enim venenatis quis. Curabitur auctor urna vitae sem placerat, non lobortis metus imperdiet. Aenean feugiat eget nunc eu tempor. Phasellus id tincidunt nibh. Fusce eu ex non metus volutpat rutrum ac ac sem. Proin pretium semper nisl non placerat. Aliquam sagittis ullamcorper erat, at lobortis nunc consectetur at. Maecenas auctor nisl id ante aliquet consectetur. Phasellus in ipsum velit. Donec et nunc varius, cursus purus id, auctor mauris. Suspendisse non ante et erat posuere lacinia sed a nulla. Donec urna lectus, efficitur sit amet auctor ut, porta pharetra massa. Duis commodo ipsum ac imperdiet tincidunt. Aliquam eu consectetur dolor. Duis sed rhoncus leo, quis tincidunt leo.
+
+</mutableString>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="bZh-O9-Gxc" firstAttribute="top" secondItem="lEy-Rv-3rv" secondAttribute="top" id="85b-ZJ-Ct9"/>
+                                            <constraint firstItem="2uG-32-NVk" firstAttribute="top" secondItem="bZh-O9-Gxc" secondAttribute="bottom" constant="30" id="M8C-E6-lhB"/>
+                                            <constraint firstAttribute="trailing" secondItem="2uG-32-NVk" secondAttribute="trailing" constant="20" id="W3C-F5-muE"/>
+                                            <constraint firstAttribute="trailing" secondItem="bZh-O9-Gxc" secondAttribute="trailing" id="Y5N-aQ-twf"/>
+                                            <constraint firstItem="bZh-O9-Gxc" firstAttribute="leading" secondItem="lEy-Rv-3rv" secondAttribute="leading" id="d4x-gZ-x7H"/>
+                                            <constraint firstAttribute="bottom" secondItem="2uG-32-NVk" secondAttribute="bottom" constant="20" id="hZK-MF-fXT"/>
+                                            <constraint firstItem="2uG-32-NVk" firstAttribute="leading" secondItem="lEy-Rv-3rv" secondAttribute="leading" constant="20" id="pNA-K2-I5c"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="275" id="gBj-8M-0iJ"/>
+                                    <constraint firstItem="lEy-Rv-3rv" firstAttribute="top" secondItem="1Fj-CF-UMJ" secondAttribute="top" id="1S1-dK-oOV"/>
+                                    <constraint firstItem="lEy-Rv-3rv" firstAttribute="width" secondItem="RuV-Lt-pcl" secondAttribute="width" id="BeY-5S-RaI"/>
+                                    <constraint firstItem="lEy-Rv-3rv" firstAttribute="trailing" secondItem="1Fj-CF-UMJ" secondAttribute="trailing" id="CM6-q5-9Wp"/>
+                                    <constraint firstItem="lEy-Rv-3rv" firstAttribute="bottom" secondItem="1Fj-CF-UMJ" secondAttribute="bottom" id="XGy-9J-uCE"/>
+                                    <constraint firstItem="lEy-Rv-3rv" firstAttribute="leading" secondItem="1Fj-CF-UMJ" secondAttribute="leading" id="aY2-aj-aWu"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Long description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2uG-32-NVk" userLabel="Description Label">
-                                <rect key="frame" x="20" y="349" width="374" height="21.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <viewLayoutGuide key="contentLayoutGuide" id="1Fj-CF-UMJ"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="RuV-Lt-pcl"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="bZh-O9-Gxc" secondAttribute="trailing" id="1W1-Cy-jdK"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2uG-32-NVk" secondAttribute="trailing" constant="20" id="7zF-cZ-9Ej"/>
-                            <constraint firstItem="bZh-O9-Gxc" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Et7-d5-5yM"/>
-                            <constraint firstItem="2uG-32-NVk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="bF5-Vh-gvq"/>
-                            <constraint firstItem="bZh-O9-Gxc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="q1p-Qm-d5y"/>
-                            <constraint firstItem="2uG-32-NVk" firstAttribute="top" secondItem="bZh-O9-Gxc" secondAttribute="bottom" constant="30" id="xy5-fv-rqL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="q9Q-bd-V2C" secondAttribute="bottom" id="CXZ-gX-xbE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="q9Q-bd-V2C" secondAttribute="top" id="Jnl-lu-nt2"/>
+                            <constraint firstItem="q9Q-bd-V2C" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="foH-Dl-wTz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="leading" secondItem="q9Q-bd-V2C" secondAttribute="leading" id="idw-IG-fpJ"/>
                         </constraints>
                     </view>
+                    <size key="freeformSize" width="414" height="1300"/>
                     <connections>
                         <outlet property="descriptionLabel" destination="2uG-32-NVk" id="02b-Xh-6TB"/>
                         <outlet property="vendorImageView" destination="bZh-O9-Gxc" id="LID-UE-I8Z"/>
