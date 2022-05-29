@@ -17,6 +17,9 @@ class AppCoordinator: Coordinator {
         let storyboard = UIStoryboard(name: "VendorsList", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "VendorsListVC") as! VendorsListViewController
         
+        let vendorService = VendorAPIService(apiClient: RESTApiClient())
+        controller.viewModel = VendorListViewModel(service: vendorService)
+        
         return UINavigationController(rootViewController: controller)
     }()
     
