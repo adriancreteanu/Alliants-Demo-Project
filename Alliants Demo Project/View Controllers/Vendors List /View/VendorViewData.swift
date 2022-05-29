@@ -9,10 +9,12 @@ import Foundation
 
 struct VendorViewData {
     let name: String
+    let description: String
     let imageURL: URL?
 
     init(vendor: Vendor) {
         self.name = vendor.displayName
+        self.description = vendor.description
         self.imageURL = URL(string: vendor.heroImage.url)
     }
 }

@@ -8,12 +8,15 @@
 import Foundation
 
 final class VendorListViewModel {
+    
     // MARK: - Properties
     
     private var service: VendorService
     private var vendors: [Vendor] = []
     
     var onStateChange: ViewStateChange?
+    
+    weak var coordinatorDelegate: VendorListViewModelCoordinatorDelegate?
     
     // MARK: - Init
     
@@ -52,5 +55,7 @@ extension VendorListViewModel: VendorListViewModelDelegate {
         VendorViewData(vendor: vendors[row])
     }
     
-    func didSelectItem(atRow row: Int) {}
+    func didSelectItem(atRow row: Int) {
+        coordinatorDelegate?.didSelect(vendor: vendors[row])
+    }
 }

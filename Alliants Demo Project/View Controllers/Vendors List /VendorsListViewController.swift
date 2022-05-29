@@ -25,13 +25,8 @@ final class VendorsListViewController: UITableViewController {
         setupViewModel()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        navigationItem.title = "Vendors"
-    }
-    
     private func setupUI() {
+        navigationItem.title = "Vendors"
         navigationController?.navigationBar.prefersLargeTitles = true
         
         let cellNib = UINib(nibName: "VendorTableViewCell", bundle: nil)
@@ -81,5 +76,9 @@ final class VendorsListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel.numberOfItems
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.didSelectItem(atRow: indexPath.row)
     }
 }

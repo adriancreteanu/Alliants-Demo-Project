@@ -17,6 +17,11 @@
 		3A33895C2843E414003FB922 /* VendorAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A33895B2843E414003FB922 /* VendorAPIService.swift */; };
 		3A33895E2843E54D003FB922 /* VendorViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A33895D2843E54D003FB922 /* VendorViewData.swift */; };
 		3A33896128440B9D003FB922 /* UIImageView+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A33896028440B9D003FB922 /* UIImageView+URL.swift */; };
+		3A33896428440D35003FB922 /* VendorDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A33896328440D34003FB922 /* VendorDetailsViewController.swift */; };
+		3A33896728440DA9003FB922 /* VendorDetailsViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A33896628440DA9003FB922 /* VendorDetailsViewModelDelegate.swift */; };
+		3A33896928440DD1003FB922 /* VendorDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A33896828440DD1003FB922 /* VendorDetailsViewModel.swift */; };
+		3A33896D28440F22003FB922 /* VendorListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A33896C28440F22003FB922 /* VendorListCoordinator.swift */; };
+		3A3389702844139F003FB922 /* VendorDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A33896F2844139F003FB922 /* VendorDetails.storyboard */; };
 		3A4D6BE02843D9A600FDAD58 /* VendorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A4D6BDE2843D9A600FDAD58 /* VendorTableViewCell.xib */; };
 		3A4D6BE12843D9A700FDAD58 /* VendorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4D6BDF2843D9A600FDAD58 /* VendorTableViewCell.swift */; };
 		3A9F52A92843C3DE0024DB61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9F52A82843C3DE0024DB61 /* AppDelegate.swift */; };
@@ -57,6 +62,11 @@
 		3A33895B2843E414003FB922 /* VendorAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorAPIService.swift; sourceTree = "<group>"; };
 		3A33895D2843E54D003FB922 /* VendorViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorViewData.swift; sourceTree = "<group>"; };
 		3A33896028440B9D003FB922 /* UIImageView+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+URL.swift"; sourceTree = "<group>"; };
+		3A33896328440D34003FB922 /* VendorDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorDetailsViewController.swift; sourceTree = "<group>"; };
+		3A33896628440DA9003FB922 /* VendorDetailsViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorDetailsViewModelDelegate.swift; sourceTree = "<group>"; };
+		3A33896828440DD1003FB922 /* VendorDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorDetailsViewModel.swift; sourceTree = "<group>"; };
+		3A33896C28440F22003FB922 /* VendorListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorListCoordinator.swift; sourceTree = "<group>"; };
+		3A33896F2844139F003FB922 /* VendorDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VendorDetails.storyboard; sourceTree = "<group>"; };
 		3A4D6BDE2843D9A600FDAD58 /* VendorTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VendorTableViewCell.xib; sourceTree = "<group>"; };
 		3A4D6BDF2843D9A600FDAD58 /* VendorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendorTableViewCell.swift; sourceTree = "<group>"; };
 		3A9F52A52843C3DE0024DB61 /* Alliants Demo Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alliants Demo Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,14 +159,42 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		3A33896228440D15003FB922 /* Vendor Details */ = {
+			isa = PBXGroup;
+			children = (
+				3A33896E28441390003FB922 /* View */,
+				3A33896528440D4D003FB922 /* ViewModel */,
+				3A33896328440D34003FB922 /* VendorDetailsViewController.swift */,
+			);
+			path = "Vendor Details";
+			sourceTree = "<group>";
+		};
+		3A33896528440D4D003FB922 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3A33896628440DA9003FB922 /* VendorDetailsViewModelDelegate.swift */,
+				3A33896828440DD1003FB922 /* VendorDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3A33896E28441390003FB922 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A33896F2844139F003FB922 /* VendorDetails.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3A4D6BDA2843D6FB00FDAD58 /* Vendors List  */ = {
 			isa = PBXGroup;
 			children = (
-				3A3389582843E3CE003FB922 /* Service */,
 				3A3389552843E3BB003FB922 /* Model */,
-				3A3389502843E2D0003FB922 /* ViewModel */,
-				3A4D6BDC2843D8D500FDAD58 /* View */,
+				3A3389582843E3CE003FB922 /* Service */,
 				3A9F52AC2843C3DE0024DB61 /* VendorsListViewController.swift */,
+				3A4D6BDC2843D8D500FDAD58 /* View */,
+				3A3389502843E2D0003FB922 /* ViewModel */,
+				3A33896C28440F22003FB922 /* VendorListCoordinator.swift */,
 			);
 			path = "Vendors List ";
 			sourceTree = "<group>";
@@ -243,6 +281,7 @@
 		3A9F52D92843C43E0024DB61 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3A33896228440D15003FB922 /* Vendor Details */,
 				3A4D6BDA2843D6FB00FDAD58 /* Vendors List  */,
 			);
 			path = "View Controllers";
@@ -385,6 +424,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A9F52B52843C3E00024DB61 /* LaunchScreen.storyboard in Resources */,
+				3A3389702844139F003FB922 /* VendorDetails.storyboard in Resources */,
 				3A9F52B22843C3E00024DB61 /* Assets.xcassets in Resources */,
 				3A9F52B02843C3DE0024DB61 /* VendorsList.storyboard in Resources */,
 				3A4D6BE02843D9A600FDAD58 /* VendorTableViewCell.xib in Resources */,
@@ -416,11 +456,15 @@
 				3A9F52AD2843C3DE0024DB61 /* VendorsListViewController.swift in Sources */,
 				3A9F52A92843C3DE0024DB61 /* AppDelegate.swift in Sources */,
 				3A33894C2843DFFC003FB922 /* Coordinator.swift in Sources */,
+				3A33896728440DA9003FB922 /* VendorDetailsViewModelDelegate.swift in Sources */,
 				3A33894B2843DFFC003FB922 /* AppCoordinator.swift in Sources */,
 				3A33896128440B9D003FB922 /* UIImageView+URL.swift in Sources */,
+				3A33896D28440F22003FB922 /* VendorListCoordinator.swift in Sources */,
+				3A33896928440DD1003FB922 /* VendorDetailsViewModel.swift in Sources */,
 				3A4D6BE12843D9A700FDAD58 /* VendorTableViewCell.swift in Sources */,
 				3A3389522843E2FB003FB922 /* VendorListViewModelDelegate.swift in Sources */,
 				3A33895C2843E414003FB922 /* VendorAPIService.swift in Sources */,
+				3A33896428440D35003FB922 /* VendorDetailsViewController.swift in Sources */,
 				3A33895A2843E3EA003FB922 /* VendorService.swift in Sources */,
 				3A3389542843E32A003FB922 /* VendorListViewModel.swift in Sources */,
 				3A33895E2843E54D003FB922 /* VendorViewData.swift in Sources */,

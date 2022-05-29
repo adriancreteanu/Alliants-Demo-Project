@@ -28,3 +28,7 @@ protocol VendorListViewModelDelegate: AnyObject {
     
     func didSelectItem(atRow row: Int)
 }
+
+protocol VendorListViewModelCoordinatorDelegate: AnyObject {
+    func didSelect(vendor: Vendor)
+}

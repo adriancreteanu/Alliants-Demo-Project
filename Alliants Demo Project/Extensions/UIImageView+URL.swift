@@ -19,4 +19,12 @@ extension UIImageView {
             }
         }
     }
+    
+    func loadIfNeeded(url: URL?) {
+        guard let url = url else {
+            return
+        }
+        
+        load(url: url)
+    }
 }

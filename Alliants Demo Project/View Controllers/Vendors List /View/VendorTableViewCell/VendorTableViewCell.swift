@@ -19,9 +19,6 @@ class VendorTableViewCell: UITableViewCell {
     
     func configure(data: VendorViewData) {
         nameLabel.text = data.name
-        
-        if let url = data.imageURL {
-            vendorImageView.load(url: url)
-        }
+        vendorImageView.loadIfNeeded(url: data.imageURL)
     }
 }

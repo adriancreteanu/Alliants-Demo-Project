@@ -12,17 +12,9 @@ class AppCoordinator: Coordinator {
     // MARK: - Properties
     
     let window: UIWindow?
+    let apiClient = RESTApiClient()
+    let rootNavigationController = UINavigationController()
 
-    lazy var rootViewController: UINavigationController = {
-        let storyboard = UIStoryboard(name: "VendorsList", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "VendorsListVC") as! VendorsListViewController
-        
-        let vendorService = VendorAPIService(apiClient: RESTApiClient())
-        controller.viewModel = VendorListViewModel(service: vendorService)
-        
-        return UINavigationController(rootViewController: controller)
-    }()
-    
     // MARK: - Coordinator
     
     init(window: UIWindow?) {
@@ -34,7 +26,19 @@ class AppCoordinator: Coordinator {
             return
         }
 
-        window.rootViewController = rootViewController
+        window.rootViewController = rootNavigationController
         window.makeKeyAndVisible()
+        
+        setRootCoordinator()
+    }
+    
+    private func setRootCoordinator() {
+        let rootCoordinator = VendorListCoordinator(
+            rootNavigationController: rootNavigationController,
+            client: apiClient
+        )
+        
+        addChildCoordinator(rootCoordinator)
+        rootCoordinator.start()
     }
 }
