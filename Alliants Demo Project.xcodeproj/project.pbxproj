@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A4D6BE02843D9A600FDAD58 /* VendorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A4D6BDE2843D9A600FDAD58 /* VendorTableViewCell.xib */; };
+		3A4D6BE12843D9A700FDAD58 /* VendorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4D6BDF2843D9A600FDAD58 /* VendorTableViewCell.swift */; };
 		3A9F52A92843C3DE0024DB61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9F52A82843C3DE0024DB61 /* AppDelegate.swift */; };
 		3A9F52AB2843C3DE0024DB61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9F52AA2843C3DE0024DB61 /* SceneDelegate.swift */; };
 		3A9F52AD2843C3DE0024DB61 /* VendorsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9F52AC2843C3DE0024DB61 /* VendorsListViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A4D6BDE2843D9A600FDAD58 /* VendorTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VendorTableViewCell.xib; sourceTree = "<group>"; };
+		3A4D6BDF2843D9A600FDAD58 /* VendorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendorTableViewCell.swift; sourceTree = "<group>"; };
 		3A9F52A52843C3DE0024DB61 /* Alliants Demo Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alliants Demo Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9F52A82843C3DE0024DB61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A9F52AA2843C3DE0024DB61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,9 +83,28 @@
 		3A4D6BDA2843D6FB00FDAD58 /* Vendors List  */ = {
 			isa = PBXGroup;
 			children = (
+				3A4D6BDC2843D8D500FDAD58 /* View */,
 				3A9F52AC2843C3DE0024DB61 /* VendorsListViewController.swift */,
 			);
 			path = "Vendors List ";
+			sourceTree = "<group>";
+		};
+		3A4D6BDC2843D8D500FDAD58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A4D6BDD2843D9A600FDAD58 /* VendorTableViewCell */,
+				3A9F52AE2843C3DE0024DB61 /* VendorsList.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3A4D6BDD2843D9A600FDAD58 /* VendorTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3A4D6BDE2843D9A600FDAD58 /* VendorTableViewCell.xib */,
+				3A4D6BDF2843D9A600FDAD58 /* VendorTableViewCell.swift */,
+			);
+			path = VendorTableViewCell;
 			sourceTree = "<group>";
 		};
 		3A9F529C2843C3DE0024DB61 = {
@@ -153,7 +176,6 @@
 		3A9F52DA2843C4600024DB61 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				3A9F52AE2843C3DE0024DB61 /* VendorsList.storyboard */,
 				3A9F52B32843C3E00024DB61 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -290,6 +312,7 @@
 				3A9F52B52843C3E00024DB61 /* LaunchScreen.storyboard in Resources */,
 				3A9F52B22843C3E00024DB61 /* Assets.xcassets in Resources */,
 				3A9F52B02843C3DE0024DB61 /* VendorsList.storyboard in Resources */,
+				3A4D6BE02843D9A600FDAD58 /* VendorTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +340,7 @@
 				3A9F52AD2843C3DE0024DB61 /* VendorsListViewController.swift in Sources */,
 				3A9F52A92843C3DE0024DB61 /* AppDelegate.swift in Sources */,
 				3A9F52AB2843C3DE0024DB61 /* SceneDelegate.swift in Sources */,
+				3A4D6BE12843D9A700FDAD58 /* VendorTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
