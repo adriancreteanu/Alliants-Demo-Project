@@ -18,7 +18,10 @@ class VendorTableViewCell: UITableViewCell {
     // MARK: - Setup
     
     func configure(data: VendorViewData) {
-        vendorImageView.backgroundColor = .blue
         nameLabel.text = data.name
+        
+        if let url = data.imageURL {
+            vendorImageView.load(url: url)
+        }
     }
 }

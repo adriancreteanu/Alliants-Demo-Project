@@ -16,6 +16,7 @@
 		3A33895A2843E3EA003FB922 /* VendorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3389592843E3EA003FB922 /* VendorService.swift */; };
 		3A33895C2843E414003FB922 /* VendorAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A33895B2843E414003FB922 /* VendorAPIService.swift */; };
 		3A33895E2843E54D003FB922 /* VendorViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A33895D2843E54D003FB922 /* VendorViewData.swift */; };
+		3A33896128440B9D003FB922 /* UIImageView+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A33896028440B9D003FB922 /* UIImageView+URL.swift */; };
 		3A4D6BE02843D9A600FDAD58 /* VendorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A4D6BDE2843D9A600FDAD58 /* VendorTableViewCell.xib */; };
 		3A4D6BE12843D9A700FDAD58 /* VendorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4D6BDF2843D9A600FDAD58 /* VendorTableViewCell.swift */; };
 		3A9F52A92843C3DE0024DB61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9F52A82843C3DE0024DB61 /* AppDelegate.swift */; };
@@ -55,6 +56,7 @@
 		3A3389592843E3EA003FB922 /* VendorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorService.swift; sourceTree = "<group>"; };
 		3A33895B2843E414003FB922 /* VendorAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorAPIService.swift; sourceTree = "<group>"; };
 		3A33895D2843E54D003FB922 /* VendorViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorViewData.swift; sourceTree = "<group>"; };
+		3A33896028440B9D003FB922 /* UIImageView+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+URL.swift"; sourceTree = "<group>"; };
 		3A4D6BDE2843D9A600FDAD58 /* VendorTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VendorTableViewCell.xib; sourceTree = "<group>"; };
 		3A4D6BDF2843D9A600FDAD58 /* VendorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendorTableViewCell.swift; sourceTree = "<group>"; };
 		3A9F52A52843C3DE0024DB61 /* Alliants Demo Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alliants Demo Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +141,14 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		3A33895F28440B86003FB922 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3A33896028440B9D003FB922 /* UIImageView+URL.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		3A4D6BDA2843D6FB00FDAD58 /* Vendors List  */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +203,7 @@
 		3A9F52A72843C3DE0024DB61 /* Alliants Demo Project */ = {
 			isa = PBXGroup;
 			children = (
+				3A33895F28440B86003FB922 /* Extensions */,
 				3A33894D2843E2AE003FB922 /* Network */,
 				3A3389482843DFFC003FB922 /* Coordinators */,
 				3A9F52D82843C42C0024DB61 /* Application Delegate */,
@@ -406,6 +417,7 @@
 				3A9F52A92843C3DE0024DB61 /* AppDelegate.swift in Sources */,
 				3A33894C2843DFFC003FB922 /* Coordinator.swift in Sources */,
 				3A33894B2843DFFC003FB922 /* AppCoordinator.swift in Sources */,
+				3A33896128440B9D003FB922 /* UIImageView+URL.swift in Sources */,
 				3A4D6BE12843D9A700FDAD58 /* VendorTableViewCell.swift in Sources */,
 				3A3389522843E2FB003FB922 /* VendorListViewModelDelegate.swift in Sources */,
 				3A33895C2843E414003FB922 /* VendorAPIService.swift in Sources */,
